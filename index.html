@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website With Auto Typing Text Effect </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="./Images/logo.png" draggable="false" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">SERVICES</a></li>
+            </ul>
+            <img src="./Images/menu-yellow-icon-button.svg" draggable="false" class="menu_icon">
+        </nav>
+
+        <div class="text_box">
+            <h1>I'm <span class="auto_input"></span></h1>
+            <p>You can reach out to me if you need any help in making a <br> website for you or your business.</p>
+            <a href="#">Contact me</a>
+            <a href="#" class="btn">Download cv</a>
+        </div>
+        <img src="./Images/girls_PNG6466.png" draggable="false" class="user_img">
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed ('.auto_input', {
+            strings: ['Mitra Kermanian', 'Web Developer', 'Ui Designer'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+</body>
+</html>
